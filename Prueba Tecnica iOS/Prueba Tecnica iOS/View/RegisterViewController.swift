@@ -26,6 +26,7 @@ class RegisterViewController: UIViewController {
                         case .success(let move):
                             if move {
                                 let vc = self.storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeViewController
+                                vc?.nombre = "Bienvenido \(nombre)"
                                 self.navigationController?.pushViewController(vc!, animated: true)
                             }
                         case .failure(let error):

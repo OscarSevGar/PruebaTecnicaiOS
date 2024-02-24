@@ -21,8 +21,6 @@
 		EED507D72B8A49AE00FF9718 /* DifusionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D62B8A49AE00FF9718 /* DifusionList.swift */; };
 		EED507DC2B8A4DAE00FF9718 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */; };
 		EED507DE2B8A4DBE00FF9718 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */; };
-		EED507E02B8A4DDB00FF9718 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DF2B8A4DDB00FF9718 /* PhotoViewController.swift */; };
-		EED507E22B8A4DE900FF9718 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507E12B8A4DE900FF9718 /* VideoPlayerViewController.swift */; };
 		EED507E42B8A4E0B00FF9718 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */; };
 		EED507E62B8A4E1500FF9718 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */; };
 		EED507E82B8A4FC800FF9718 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EED507E72B8A4FC800FF9718 /* GoogleService-Info.plist */; };
@@ -58,8 +56,6 @@
 		EED507D62B8A49AE00FF9718 /* DifusionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifusionList.swift; sourceTree = "<group>"; };
 		EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		EED507DF2B8A4DDB00FF9718 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		EED507E12B8A4DE900FF9718 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EED507E72B8A4FC800FF9718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -146,10 +142,8 @@
 				EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */,
 				EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */,
 				EE041C1F2B8A6164002549C0 /* HomeViewController.swift */,
-				EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */,
-				EED507DF2B8A4DDB00FF9718 /* PhotoViewController.swift */,
-				EED507E12B8A4DE900FF9718 /* VideoPlayerViewController.swift */,
 				EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */,
+				EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,8 +273,6 @@
 				EED507E42B8A4E0B00FF9718 /* NewMessageViewController.swift in Sources */,
 				EED507E62B8A4E1500FF9718 /* ProfileViewController.swift in Sources */,
 				EED508042B8A515D00FF9718 /* InitAppViewController.swift in Sources */,
-				EED507E02B8A4DDB00FF9718 /* PhotoViewController.swift in Sources */,
-				EED507E22B8A4DE900FF9718 /* VideoPlayerViewController.swift in Sources */,
 				EED507702B8A408E00FF9718 /* AppDelegate.swift in Sources */,
 				EED507722B8A408E00FF9718 /* SceneDelegate.swift in Sources */,
 			);
