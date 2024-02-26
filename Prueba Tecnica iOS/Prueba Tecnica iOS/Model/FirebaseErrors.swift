@@ -8,5 +8,6 @@
 import Foundation
 
 enum LoginError: Error{
-    case userCreate
+    case loginError
+    case existingUser
 }

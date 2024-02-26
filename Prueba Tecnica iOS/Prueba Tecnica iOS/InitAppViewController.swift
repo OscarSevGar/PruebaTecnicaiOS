@@ -21,8 +21,9 @@ class InitAppViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         let isLoggedIn = UserDefaults.standard.bool(forKey: "logged_in")
         if !isLoggedIn{
-            let vc = storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginViewController
-            self.navigationController?.pushViewController(vc!, animated: true)
+            self.nextView(identifier: "Login")
+        }else{
+            self.nextView(identifier: "Home")
         }
     }
 }

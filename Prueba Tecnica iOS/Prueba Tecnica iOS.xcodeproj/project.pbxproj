@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE041C202B8A6164002549C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE041C1F2B8A6164002549C0 /* HomeViewController.swift */; };
-		EE041C222B8A6913002549C0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE041C212B8A6913002549C0 /* Errors.swift */; };
+		EE041C222B8A6913002549C0 /* FirebaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE041C212B8A6913002549C0 /* FirebaseErrors.swift */; };
 		EED507702B8A408E00FF9718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5076F2B8A408E00FF9718 /* AppDelegate.swift */; };
 		EED507722B8A408E00FF9718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507712B8A408E00FF9718 /* SceneDelegate.swift */; };
 		EED507772B8A408E00FF9718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED507752B8A408E00FF9718 /* Main.storyboard */; };
@@ -18,7 +18,6 @@
 		EED507872B8A41DF00FF9718 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EED507862B8A41DF00FF9718 /* FirebaseFirestore */; };
 		EED507D32B8A48DB00FF9718 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D22B8A48DB00FF9718 /* User.swift */; };
 		EED507D52B8A492800FF9718 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D42B8A492800FF9718 /* Message.swift */; };
-		EED507D72B8A49AE00FF9718 /* DifusionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D62B8A49AE00FF9718 /* DifusionList.swift */; };
 		EED507DC2B8A4DAE00FF9718 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */; };
 		EED507DE2B8A4DBE00FF9718 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */; };
 		EED507E42B8A4E0B00FF9718 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */; };
@@ -39,11 +38,19 @@
 		EED508022B8A508F00FF9718 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EED508012B8A508F00FF9718 /* FirebaseFirestoreSwift */; };
 		EED508042B8A515D00FF9718 /* InitAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED508032B8A515D00FF9718 /* InitAppViewController.swift */; };
 		EED508062B8A5D2E00FF9718 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED508052B8A5D2E00FF9718 /* FirebaseManager.swift */; };
+		EEFDF5E02B8A9369000E7001 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5DF2B8A9369000E7001 /* CoreDataManager.swift */; };
+		EEFDF5E22B8A955F000E7001 /* Extension+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5E12B8A955F000E7001 /* Extension+Utils.swift */; };
+		EEFDF5E42B8AAAE2000E7001 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5E32B8AAAE2000E7001 /* UserViewModel.swift */; };
+		EEFDF5E62B8AAD37000E7001 /* ConversacionesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5E52B8AAD37000E7001 /* ConversacionesViewModel.swift */; };
+		EEFDF5E92B8AB35C000E7001 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5E72B8AB35C000E7001 /* MessageTableViewCell.swift */; };
+		EEFDF5EA2B8AB35C000E7001 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFDF5E82B8AB35C000E7001 /* MessageTableViewCell.xib */; };
+		EEFDF5ED2B8ABFD6000E7001 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5EC2B8ABFD6000E7001 /* ConversationViewController.swift */; };
+		EEFDF5EF2B8AD19E000E7001 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDF5EE2B8AD19E000E7001 /* UserDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE041C1F2B8A6164002549C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EE041C212B8A6913002549C0 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		EE041C212B8A6913002549C0 /* FirebaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseErrors.swift; sourceTree = "<group>"; };
 		EED5076C2B8A408E00FF9718 /* Prueba Tecnica iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba Tecnica iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED5076F2B8A408E00FF9718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED507712B8A408E00FF9718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +60,6 @@
 		EED5077D2B8A409100FF9718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EED507D22B8A48DB00FF9718 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EED507D42B8A492800FF9718 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		EED507D62B8A49AE00FF9718 /* DifusionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifusionList.swift; sourceTree = "<group>"; };
 		EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +67,14 @@
 		EED507E72B8A4FC800FF9718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EED508032B8A515D00FF9718 /* InitAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitAppViewController.swift; sourceTree = "<group>"; };
 		EED508052B8A5D2E00FF9718 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		EEFDF5DF2B8A9369000E7001 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EEFDF5E12B8A955F000E7001 /* Extension+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Utils.swift"; sourceTree = "<group>"; };
+		EEFDF5E32B8AAAE2000E7001 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EEFDF5E52B8AAD37000E7001 /* ConversacionesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversacionesViewModel.swift; sourceTree = "<group>"; };
+		EEFDF5E72B8AB35C000E7001 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		EEFDF5E82B8AB35C000E7001 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		EEFDF5EC2B8ABFD6000E7001 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		EEFDF5EE2B8AD19E000E7001 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +144,7 @@
 			children = (
 				EED507D22B8A48DB00FF9718 /* User.swift */,
 				EED507D42B8A492800FF9718 /* Message.swift */,
-				EED507D62B8A49AE00FF9718 /* DifusionList.swift */,
-				EE041C212B8A6913002549C0 /* Errors.swift */,
+				EE041C212B8A6913002549C0 /* FirebaseErrors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,11 +152,13 @@
 		EED507D02B8A47C500FF9718 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEFDF5EB2B8ABD48000E7001 /* Components */,
 				EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */,
 				EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */,
 				EE041C1F2B8A6164002549C0 /* HomeViewController.swift */,
 				EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */,
 				EED507E32B8A4E0B00FF9718 /* NewMessageViewController.swift */,
+				EEFDF5EC2B8ABFD6000E7001 /* ConversationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				EED508052B8A5D2E00FF9718 /* FirebaseManager.swift */,
+				EEFDF5DF2B8A9369000E7001 /* CoreDataManager.swift */,
+				EEFDF5E32B8AAAE2000E7001 /* UserViewModel.swift */,
+				EEFDF5E52B8AAD37000E7001 /* ConversacionesViewModel.swift */,
+				EEFDF5EE2B8AD19E000E7001 /* UserDetailViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,8 +185,18 @@
 		EED507D92B8A4CCE00FF9718 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EEFDF5E12B8A955F000E7001 /* Extension+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEFDF5EB2B8ABD48000E7001 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDF5E82B8AB35C000E7001 /* MessageTableViewCell.xib */,
+				EEFDF5E72B8AB35C000E7001 /* MessageTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +279,7 @@
 			files = (
 				EED5077C2B8A409100FF9718 /* LaunchScreen.storyboard in Resources */,
 				EED507792B8A409100FF9718 /* Assets.xcassets in Resources */,
+				EEFDF5EA2B8AB35C000E7001 /* MessageTableViewCell.xib in Resources */,
 				EED507E82B8A4FC800FF9718 /* GoogleService-Info.plist in Resources */,
 				EED507772B8A408E00FF9718 /* Main.storyboard in Resources */,
 			);
@@ -263,18 +293,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED507DC2B8A4DAE00FF9718 /* LoginViewController.swift in Sources */,
-				EE041C222B8A6913002549C0 /* Errors.swift in Sources */,
+				EE041C222B8A6913002549C0 /* FirebaseErrors.swift in Sources */,
+				EEFDF5ED2B8ABFD6000E7001 /* ConversationViewController.swift in Sources */,
 				EED507D52B8A492800FF9718 /* Message.swift in Sources */,
 				EED508062B8A5D2E00FF9718 /* FirebaseManager.swift in Sources */,
-				EED507D72B8A49AE00FF9718 /* DifusionList.swift in Sources */,
 				EED507DE2B8A4DBE00FF9718 /* RegisterViewController.swift in Sources */,
 				EE041C202B8A6164002549C0 /* HomeViewController.swift in Sources */,
+				EEFDF5EF2B8AD19E000E7001 /* UserDetailViewModel.swift in Sources */,
 				EED507D32B8A48DB00FF9718 /* User.swift in Sources */,
 				EED507E42B8A4E0B00FF9718 /* NewMessageViewController.swift in Sources */,
+				EEFDF5E42B8AAAE2000E7001 /* UserViewModel.swift in Sources */,
 				EED507E62B8A4E1500FF9718 /* ProfileViewController.swift in Sources */,
+				EEFDF5E92B8AB35C000E7001 /* MessageTableViewCell.swift in Sources */,
 				EED508042B8A515D00FF9718 /* InitAppViewController.swift in Sources */,
 				EED507702B8A408E00FF9718 /* AppDelegate.swift in Sources */,
+				EEFDF5E62B8AAD37000E7001 /* ConversacionesViewModel.swift in Sources */,
+				EEFDF5E02B8A9369000E7001 /* CoreDataManager.swift in Sources */,
 				EED507722B8A408E00FF9718 /* SceneDelegate.swift in Sources */,
+				EEFDF5E22B8A955F000E7001 /* Extension+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

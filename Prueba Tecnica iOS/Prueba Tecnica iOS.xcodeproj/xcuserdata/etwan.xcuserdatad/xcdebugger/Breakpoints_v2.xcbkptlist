@@ -3,4 +3,149 @@
    uuid = "887CB7EA-B5E1-4E7C-ACEC-806ADE21F22B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4398CB1-A38D-4F02-8624-3E223F7EF8D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prueba Tecnica iOS/Controller/FirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "login(correo:password:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C4398CB1-A38D-4F02-8624-3E223F7EF8D6 - 4b6d30401248db2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.FirebaseManager.firebaseLogin(correo: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/FirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "C4398CB1-A38D-4F02-8624-3E223F7EF8D6 - 4b6d30401248db2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.FirebaseManager.firebaseLogin(correo: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/FirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "C4398CB1-A38D-4F02-8624-3E223F7EF8D6 - 74ab7416d6182546"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.FirebaseManager.login(correo: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/FirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2065C264-A5F7-437B-B56A-19E6250039A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prueba Tecnica iOS/View/MessageTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "setup(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prueba Tecnica iOS/Controller/UserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchUsers(successCallback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07 - 917b43097b361b8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prueba_Tecnica_iOS.UserViewModel.fetchUsers(successCallback: () -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07 - 5bb40de761261132"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.UserViewModel.fetchUsers(successCallback: () -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A2722B3-BF6B-4440-A1EB-DBBAACC44426"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prueba Tecnica iOS/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "updateUser(nombre:pictureURL:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

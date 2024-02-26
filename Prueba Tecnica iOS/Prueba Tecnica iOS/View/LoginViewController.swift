@@ -19,12 +19,12 @@ class LoginViewController: UIViewController {
     
     func loginUser(){
         if let correo = self.correoTxt.text, let password = self.passwordTxt.text {
-                FirebaseManager.shared.firebaseLogin(correo: correo, password: password) { result in
+                FirebaseManager.shared.login(correo: correo, password: password) { result in
                     switch result {
                         case .success(let move):
                             if move {
-                                let vc = self.storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeViewController
-                                self.navigationController?.pushViewController(vc!, animated: true)
+                                CoreDataManager.shared.saveUserLogged(email: correo, name: "")
+                                self.nextView(identifier: "Home")
                             }
                         case .failure(let error):
                             print(error)

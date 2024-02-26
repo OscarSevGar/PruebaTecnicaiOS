@@ -15,24 +15,30 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     func createUser(){
         if let correo = self.correoTxt.text, let password = self.contraseniatxt.text, let nombre = self.nombreTxt.text {
-                FirebaseManager.shared.firebaseRegister(correo: correo, password: password) { result in
+                FirebaseManager.shared.register(correo: correo, password: password) { result in
                     switch result {
                         case .success(let move):
                             if move {
-                                let vc = self.storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeViewController
-                                vc?.nombre = "Bienvenido \(nombre)"
-                                self.navigationController?.pushViewController(vc!, animated: true)
+                                CoreDataManager.shared.saveUserLogged(email: correo, name: nombre)
+                                self.saveUser(detailViewModel: UserDetailViewModel(user: User(correo: correo, nombre: nombre)))
                             }
                         case .failure(let error):
                             print(error)
                     }
                 }
+        }
+    }
+    
+    func saveUser(detailViewModel: UserDetailViewModel){
+        detailViewModel.addUser {
+            self.nextView(identifier: "Home")
+        }errorCallback: {
+            debugPrint("ERROR")
         }
     }
     
