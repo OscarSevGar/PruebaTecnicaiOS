@@ -7,15 +7,21 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
+import FirebaseStorage
 
 class UserDetailViewModel {
     private let db = Firestore.firestore().collection("Users")
-    var user = User()
+    private let storage = Storage.storage().reference()
     private var documentID = ""
+    var user = User()
+    var imgData: Data?
+    var img = UIImage()
     
     init() {
         getUser{
-            print("Success")
+            print("Getting user successfully")
+            self.descargarImagen()
         }errorCallback: {
             print("Error")
         }
@@ -53,6 +59,7 @@ class UserDetailViewModel {
                             self.user.nombre = user.nombre
                             self.user.foto = user.foto
                             self.user.correo = user.correo
+                            self.descargarImagen()
                             successCallback()
                         }
                     }
@@ -65,6 +72,7 @@ class UserDetailViewModel {
     
     func updateUser(successCallback: @escaping(() -> Void), errorCallback: @escaping(() -> Void)){
         do {
+            storagePhoto()
             try self.db.document(documentID).setData(from: self.user) { error in
                 if error != nil {
                     errorCallback()
@@ -75,5 +83,34 @@ class UserDetailViewModel {
         }catch let error {
             errorCallback()
         }
+    }
+    
+    func storagePhoto(){
+        storage.child("\(self.user.nombre ?? "foto").jpg").putData(self.imgData!, metadata: nil, completion: {_, error in
+            guard error == nil else {
+                print("Error al subir imagen \(error?.localizedDescription)")
+                return
+            }
+        })
+        
+        storage.downloadURL { (url, error) in
+            if let err = error {
+                print("Error al subir imagen \(err.localizedDescription)")
+                return
+            }
+            guard let url = url else { return }
+            self.user.foto = url.absoluteString
+        }
+    }
+    
+    func descargarImagen(){
+        //actualizar la UI de manera asincrona
+        let task = URLSession.shared.dataTask(with: URL(string: self.user.foto!)!, completionHandler: {data, _, error in
+            guard let data = data, error == nil else{ return }
+            DispatchQueue.main.async {
+                self.img = UIImage(data: data)!
+            }
+        })
+        task.resume()
     }
 }

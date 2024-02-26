@@ -86,47 +86,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07"
-            shouldBeEnabled = "Yes"
+            uuid = "AB66962C-C875-4E6F-965F-8DBF1AC57637"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Prueba Tecnica iOS/Controller/UserViewModel.swift"
+            filePath = "Prueba Tecnica iOS/Controller/UserDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "fetchUsers(successCallback:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getUser(successCallback:errorCallback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FD9D257-383F-4164-B10D-30578DE2B0DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prueba Tecnica iOS/Controller/UserDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "descargarImagen()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07 - 917b43097b361b8e"
+                  uuid = "6FD9D257-383F-4164-B10D-30578DE2B0DE - cc3789c2532a5d80"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Prueba_Tecnica_iOS.UserViewModel.fetchUsers(successCallback: () -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.UserDetailViewModel.descargarImagen() -&gt; ()"
                   moduleName = "Prueba Tecnica iOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserViewModel.swift"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserDetailViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "252">
                </Location>
                <Location
-                  uuid = "230B7E59-4A37-4D52-BE25-E42D29422F07 - 5bb40de761261132"
+                  uuid = "6FD9D257-383F-4164-B10D-30578DE2B0DE - cc3789c2532a5dc6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.UserViewModel.fetchUsers(successCallback: () -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.UserDetailViewModel.descargarImagen() -&gt; ()"
                   moduleName = "Prueba Tecnica iOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserViewModel.swift"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserDetailViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "88">
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "92">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -134,17 +150,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6A2722B3-BF6B-4440-A1EB-DBBAACC44426"
+            uuid = "CF3B9C59-CFBC-4D93-8BB9-476CBA22B314"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Prueba Tecnica iOS/View/ProfileViewController.swift"
+            filePath = "Prueba Tecnica iOS/Controller/UserDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "updateUser(nombre:pictureURL:)"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "storagePhoto()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF3B9C59-CFBC-4D93-8BB9-476CBA22B314 - 96a7b4c132473b18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prueba_Tecnica_iOS.UserDetailViewModel.storagePhoto() -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "796">
+               </Location>
+               <Location
+                  uuid = "CF3B9C59-CFBC-4D93-8BB9-476CBA22B314 - 4b99eb419d38c923"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.UserDetailViewModel.storagePhoto() -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Github/PruebaTecnicaiOS/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
