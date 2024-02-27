@@ -58,11 +58,6 @@ class UserDetailViewModel {
                             self.user.nombre = user.nombre
                             self.user.foto = user.foto
                             self.user.correo = user.correo
-                            self.descargarImagen {
-                                print("Getting image successfully")
-                            }errorCallback: {
-                                print("Error")
-                            }
                             successCallback()
                         }
                     }
