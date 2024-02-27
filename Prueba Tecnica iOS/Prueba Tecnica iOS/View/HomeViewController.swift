@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
         listMessage.fetchMessages {
             self.conversaciones.reloadData()
         }

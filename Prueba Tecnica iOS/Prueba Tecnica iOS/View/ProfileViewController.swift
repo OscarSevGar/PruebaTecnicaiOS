@@ -22,12 +22,17 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        profilePicture.image = detail.img
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         nombreTxt.text = detail.user.nombre
+        detail.descargarImagen{
+            self.profilePicture.image = self.detail.img
+            print("Getting image successfully")
+        }errorCallback: {
+            print("Error with image")
+        }
     }
     
     @IBAction func saveData(_ sender: Any) {
@@ -38,7 +43,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func updateUser(nombre: String){
         detail.user.nombre = nombre
-        detail.imgData = self.imgData
+        guard let imageData = self.detail.img.jpegData(compressionQuality: 1.0) else{ return }
+        self.detail.imgData = imageData
         detail.updateUser{
             self.navigationController?.dismiss(animated: true)
         }errorCallback: {

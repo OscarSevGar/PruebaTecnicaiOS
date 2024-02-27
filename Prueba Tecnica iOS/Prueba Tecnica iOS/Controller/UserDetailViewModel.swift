@@ -21,9 +21,8 @@ class UserDetailViewModel {
     init() {
         getUser{
             print("Getting user successfully")
-            self.descargarImagen()
         }errorCallback: {
-            print("Error")
+            print("Error with user")
         }
     }
     
@@ -59,7 +58,11 @@ class UserDetailViewModel {
                             self.user.nombre = user.nombre
                             self.user.foto = user.foto
                             self.user.correo = user.correo
-                            self.descargarImagen()
+                            self.descargarImagen {
+                                print("Getting image successfully")
+                            }errorCallback: {
+                                print("Error")
+                            }
                             successCallback()
                         }
                     }
@@ -86,31 +89,28 @@ class UserDetailViewModel {
     }
     
     func storagePhoto(){
-        storage.child("\(self.user.nombre ?? "foto").jpg").putData(self.imgData!, metadata: nil, completion: {_, error in
+        self.user.foto = "\(self.user.nombre ?? "foto").jpg"
+        storage.child(self.user.foto!).putData(self.imgData!, metadata: nil, completion: {_, error in
             guard error == nil else {
                 print("Error al subir imagen \(error?.localizedDescription)")
                 return
             }
         })
-        
-        storage.downloadURL { (url, error) in
-            if let err = error {
-                print("Error al subir imagen \(err.localizedDescription)")
-                return
-            }
-            guard let url = url else { return }
-            self.user.foto = url.absoluteString
-        }
     }
-    
-    func descargarImagen(){
-        //actualizar la UI de manera asincrona
-        let task = URLSession.shared.dataTask(with: URL(string: self.user.foto!)!, completionHandler: {data, _, error in
-            guard let data = data, error == nil else{ return }
-            DispatchQueue.main.async {
-                self.img = UIImage(data: data)!
+    func descargarImagen(successCallback: @escaping(() -> Void), errorCallback: @escaping(() -> Void)){
+        storage.child(self.user.foto!).getData(maxSize: 2 * 1024 * 1024) { data, error in
+            if let error = error {
+                print("error: \(error.localizedDescription)")
+            } else {
+                let image = UIImage(data: data!)
+                if image != nil{
+                    self.img = image!
+                    successCallback()
+                }else{
+                    self.img = UIImage(systemName: "person.crop.circle")!
+                    errorCallback()
+                }
             }
-        })
-        task.resume()
+        }
     }
 }
