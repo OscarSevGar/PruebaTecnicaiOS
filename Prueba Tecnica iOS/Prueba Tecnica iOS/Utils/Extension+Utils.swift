@@ -30,3 +30,8 @@ extension UIViewController {
         navigationController?.popToViewController(vc!, animated: true)
     }
 }
+
+extension UIColor {
+  static let primaryColor = UIColor(red: 69 / 255, green: 193 / 255, blue: 89 / 255, alpha: 1)
+  static let secondaryColor = UIColor(red: 34 / 255, green: 59 / 255, blue: 11 / 255, alpha: 1)
+}

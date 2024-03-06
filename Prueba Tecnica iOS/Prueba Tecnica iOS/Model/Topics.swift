@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct Message: Codable {
+struct Topics: Codable {
     
     @DocumentID var id: String?
     var messageId: String

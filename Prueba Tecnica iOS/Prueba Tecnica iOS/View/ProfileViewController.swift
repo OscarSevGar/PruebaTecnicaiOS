@@ -43,9 +43,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func updateUser(nombre: String){
         detail.user.nombre = nombre
-        guard let imageData = self.detail.img.jpegData(compressionQuality: 1.0) else{ return }
-        self.detail.imgData = imageData
-        detail.updateUser{
+        guard let imageData = self.profilePicture.image!.jpegData(compressionQuality: 1.0) else{ return }
+        detail.imgData = imageData
+        detail.updateUser {
             self.navigationController?.dismiss(animated: true)
         }errorCallback: {
             print("ERROR")
@@ -56,14 +56,14 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let message = NSLocalizedString("Selecciona una opción", comment: "")
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
         
-        alert.addAction(UIAlertAction(title: "Camera", style: .default) { [unowned self] _ in
+        alert.addAction(UIAlertAction(title: "Cámara", style: .default) { [unowned self] _ in
             isCamera = true
             let picker = UIImagePickerController()
             picker.sourceType = .camera
             picker.delegate = self
             present(picker, animated: true, completion: nil)
         })
-        alert.addAction(UIAlertAction(title: "Photo Library", style: .default) { [unowned self] _ in
+        alert.addAction(UIAlertAction(title: "Librería de Fotos", style: .default) { [unowned self] _ in
             isCamera = false
             let picker = UIImagePickerController()
             picker.sourceType = .photoLibrary
@@ -79,15 +79,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         picker.dismiss(animated: true, completion: nil)
         if isCamera{
             guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-            self.img = image
+            self.profilePicture.image = image
         }else {
             guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
-            self.img = image
+            self.profilePicture.image = image
         }
-        
-        guard let imageData = self.img!.jpegData(compressionQuality: 1.0) else{ return }
-        imgData = imageData
-        self.profilePicture.image = self.img
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

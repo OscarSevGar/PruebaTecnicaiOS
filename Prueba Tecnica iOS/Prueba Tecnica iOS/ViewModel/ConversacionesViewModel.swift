@@ -10,13 +10,13 @@ import FirebaseFirestore
 
 class ConversacionesViewModel {
     private let db = Firestore.firestore().collection("Messages")
-    private (set) var message = [Message]()
+    private (set) var message = [Topics]()
     
     var numberOfMessage: Int{
         return message.count
     }
     
-    func message(atIndexPath indexPath: IndexPath) -> Message {
+    func message(atIndexPath indexPath: IndexPath) -> Topics {
         return message[indexPath.row]
     }
     
@@ -24,7 +24,7 @@ class ConversacionesViewModel {
         db.addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else { return }
             
-            self.message = documents.compactMap { try? $0.data(as: Message.self) }
+            self.message = documents.compactMap { try? $0.data(as: Topics.self) }
             successCallback()
         }
     }

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		744EE6267189C2C70DE2C15C /* Pods_Prueba_Tecnica_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5BF647110B181D7C8E211B /* Pods_Prueba_Tecnica_iOS.framework */; };
+		E8D3F29332CC6FC31634554F /* Pods_Prueba_Tecnica_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2C309AA0D3752B3291DC32 /* Pods_Prueba_Tecnica_iOS.framework */; };
 		EE041C202B8A6164002549C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE041C1F2B8A6164002549C0 /* HomeViewController.swift */; };
 		EE041C222B8A6913002549C0 /* FirebaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE041C212B8A6913002549C0 /* FirebaseErrors.swift */; };
+		EE0901072B97E90F007F5430 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0901062B97E90F007F5430 /* Messages.swift */; };
 		EE420B0E2B8CF805002F077B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EE420B0D2B8CF805002F077B /* FirebaseAnalytics */; };
 		EE420B102B8CF805002F077B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = EE420B0F2B8CF805002F077B /* FirebaseAnalyticsOnDeviceConversion */; };
 		EE420B122B8CF805002F077B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE420B112B8CF805002F077B /* FirebaseAnalyticsSwift */; };
@@ -97,7 +98,7 @@
 		EED507852B8A41DF00FF9718 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EED507842B8A41DF00FF9718 /* FirebaseAuth */; };
 		EED507872B8A41DF00FF9718 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EED507862B8A41DF00FF9718 /* FirebaseFirestore */; };
 		EED507D32B8A48DB00FF9718 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D22B8A48DB00FF9718 /* User.swift */; };
-		EED507D52B8A492800FF9718 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D42B8A492800FF9718 /* Message.swift */; };
+		EED507D52B8A492800FF9718 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507D42B8A492800FF9718 /* Topics.swift */; };
 		EED507DC2B8A4DAE00FF9718 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */; };
 		EED507DE2B8A4DBE00FF9718 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */; };
 		EED507E62B8A4E1500FF9718 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */; };
@@ -127,11 +128,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43E8A90931A0A143746232A7 /* Pods-Prueba Tecnica iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Tecnica iOS.debug.xcconfig"; path = "Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8934A9F25816A00A7EEB24B9 /* Pods-Prueba Tecnica iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Tecnica iOS.release.xcconfig"; path = "Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS.release.xcconfig"; sourceTree = "<group>"; };
-		8A5BF647110B181D7C8E211B /* Pods_Prueba_Tecnica_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_Tecnica_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		339997577CCF4443D069CFCC /* Pods-Prueba Tecnica iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Tecnica iOS.release.xcconfig"; path = "Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BA2C309AA0D3752B3291DC32 /* Pods_Prueba_Tecnica_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_Tecnica_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AFEC3479A80B1644EF3142 /* Pods-Prueba Tecnica iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Tecnica iOS.debug.xcconfig"; path = "Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EE041C1F2B8A6164002549C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE041C212B8A6913002549C0 /* FirebaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseErrors.swift; sourceTree = "<group>"; };
+		EE0901062B97E90F007F5430 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		EED5076C2B8A408E00FF9718 /* Prueba Tecnica iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba Tecnica iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED5076F2B8A408E00FF9718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED507712B8A408E00FF9718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +142,7 @@
 		EED5077B2B8A409100FF9718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED5077D2B8A409100FF9718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EED507D22B8A48DB00FF9718 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EED507D42B8A492800FF9718 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EED507D42B8A492800FF9718 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		EED507DB2B8A4DAE00FF9718 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EED507DD2B8A4DBE00FF9718 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EED507E52B8A4E1500FF9718 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -255,26 +257,18 @@
 				EED508002B8A508F00FF9718 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				EE420B662B8CF9B1002F077B /* FirebaseInAppMessaging-Beta in Frameworks */,
 				EE420B802B8CF9C8002F077B /* FirebaseAppDistribution-Beta in Frameworks */,
-				744EE6267189C2C70DE2C15C /* Pods_Prueba_Tecnica_iOS.framework in Frameworks */,
+				E8D3F29332CC6FC31634554F /* Pods_Prueba_Tecnica_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C8BEAAC4629DD85C67B3890A /* Frameworks */ = {
+		223535FAD8F65B51929CBDB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8A5BF647110B181D7C8E211B /* Pods_Prueba_Tecnica_iOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9C302DBF65F396BAE90C5B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				43E8A90931A0A143746232A7 /* Pods-Prueba Tecnica iOS.debug.xcconfig */,
-				8934A9F25816A00A7EEB24B9 /* Pods-Prueba Tecnica iOS.release.xcconfig */,
+				C1AFEC3479A80B1644EF3142 /* Pods-Prueba Tecnica iOS.debug.xcconfig */,
+				339997577CCF4443D069CFCC /* Pods-Prueba Tecnica iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -284,8 +278,8 @@
 			children = (
 				EED5076E2B8A408E00FF9718 /* Prueba Tecnica iOS */,
 				EED5076D2B8A408E00FF9718 /* Products */,
-				C9C302DBF65F396BAE90C5B5 /* Pods */,
-				C8BEAAC4629DD85C67B3890A /* Frameworks */,
+				223535FAD8F65B51929CBDB5 /* Pods */,
+				F77F63804D8B0C0C37ECDE56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -321,8 +315,9 @@
 			isa = PBXGroup;
 			children = (
 				EED507D22B8A48DB00FF9718 /* User.swift */,
-				EED507D42B8A492800FF9718 /* Message.swift */,
+				EED507D42B8A492800FF9718 /* Topics.swift */,
 				EE041C212B8A6913002549C0 /* FirebaseErrors.swift */,
+				EE0901062B97E90F007F5430 /* Messages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,8 +340,6 @@
 			children = (
 				EED508052B8A5D2E00FF9718 /* FirebaseManager.swift */,
 				EEFDF5DF2B8A9369000E7001 /* CoreDataManager.swift */,
-				EEFDF5E52B8AAD37000E7001 /* ConversacionesViewModel.swift */,
-				EEFDF5EE2B8AD19E000E7001 /* UserDetailViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +347,8 @@
 		EED507D82B8A4CBC00FF9718 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEFDF5E52B8AAD37000E7001 /* ConversacionesViewModel.swift */,
+				EEFDF5EE2B8AD19E000E7001 /* UserDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -375,6 +370,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F77F63804D8B0C0C37ECDE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C309AA0D3752B3291DC32 /* Pods_Prueba_Tecnica_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,11 +385,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED507802B8A409100FF9718 /* Build configuration list for PBXNativeTarget "Prueba Tecnica iOS" */;
 			buildPhases = (
-				8E4AD8EE94D2797F436307B3 /* [CP] Check Pods Manifest.lock */,
+				10A5E068AF455182FA77654F /* [CP] Check Pods Manifest.lock */,
 				EED507682B8A408E00FF9718 /* Sources */,
 				EED507692B8A408E00FF9718 /* Frameworks */,
 				EED5076A2B8A408E00FF9718 /* Resources */,
-				643C2D0B65518C3EBE6663B4 /* [CP] Embed Pods Frameworks */,
+				25B88C5EB7FEE7F1A4D8B01F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -545,24 +548,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		643C2D0B65518C3EBE6663B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E4AD8EE94D2797F436307B3 /* [CP] Check Pods Manifest.lock */ = {
+		10A5E068AF455182FA77654F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -584,6 +570,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		25B88C5EB7FEE7F1A4D8B01F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prueba Tecnica iOS/Pods-Prueba Tecnica iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -592,9 +595,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED507DC2B8A4DAE00FF9718 /* LoginViewController.swift in Sources */,
+				EE0901072B97E90F007F5430 /* Messages.swift in Sources */,
 				EE041C222B8A6913002549C0 /* FirebaseErrors.swift in Sources */,
 				EEFDF5ED2B8ABFD6000E7001 /* ConversationViewController.swift in Sources */,
-				EED507D52B8A492800FF9718 /* Message.swift in Sources */,
+				EED507D52B8A492800FF9718 /* Topics.swift in Sources */,
 				EED508062B8A5D2E00FF9718 /* FirebaseManager.swift in Sources */,
 				EED507DE2B8A4DBE00FF9718 /* RegisterViewController.swift in Sources */,
 				EE041C202B8A6164002549C0 /* HomeViewController.swift in Sources */,
@@ -754,7 +758,7 @@
 		};
 		EED507812B8A409100FF9718 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43E8A90931A0A143746232A7 /* Pods-Prueba Tecnica iOS.debug.xcconfig */;
+			baseConfigurationReference = C1AFEC3479A80B1644EF3142 /* Pods-Prueba Tecnica iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,7 +793,7 @@
 		};
 		EED507822B8A409100FF9718 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8934A9F25816A00A7EEB24B9 /* Pods-Prueba Tecnica iOS.release.xcconfig */;
+			baseConfigurationReference = 339997577CCF4443D069CFCC /* Pods-Prueba Tecnica iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

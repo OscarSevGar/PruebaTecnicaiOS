@@ -10,7 +10,7 @@ import UIKit
 class MessageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
-    var mensaje: Message?{
+    var mensaje: Topics?{
         didSet{
             guard let mensaje else { return }
             setup(mensaje)
@@ -28,7 +28,7 @@ class MessageTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    private func setup(_ message: Message){
+    private func setup(_ message: Topics){
         title.text = mensaje?.messageId ?? ""
     }
 }

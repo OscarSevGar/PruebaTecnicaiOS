@@ -64,6 +64,21 @@
                   endingLineNumber = "32"
                   offsetFromSymbolStart = "704">
                </Location>
+               <Location
+                  uuid = "C4398CB1-A38D-4F02-8624-3E223F7EF8D6 - 8b4e4729195acc74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Prueba_Tecnica_iOS.FirebaseManager.login(correo: Swift.String, password: Swift.String, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Prueba Tecnica iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/etwan/Documents/Workspaces/XCode/Prueba%20Tecnica/Prueba%20Tecnica%20iOS/Prueba%20Tecnica%20iOS/Controller/FirebaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "704">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -111,8 +126,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
             endingLineNumber = "111"
-            landmarkName = "descargarImagen()"
-            landmarkType = "7">
+            landmarkName = "UserDetailViewModel"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "6FD9D257-383F-4164-B10D-30578DE2B0DE - cc3789c2532a5d80"
@@ -159,7 +174,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
             endingLineNumber = "96"
-            landmarkName = "storagePhoto()"
+            landmarkName = "descargarImagen(successCallback:errorCallback:)"
             landmarkType = "7">
             <Locations>
                <Location

@@ -85,7 +85,7 @@ class UserDetailViewModel {
     
     func storagePhoto(){
         self.user.foto = "\(self.user.nombre ?? "foto").jpg"
-        storage.child(self.user.foto!).putData(self.imgData!, metadata: nil, completion: {_, error in
+        storage.child(self.user.correo!).putData(self.imgData!, metadata: nil, completion: {_, error in
             guard error == nil else {
                 print("Error al subir imagen \(error?.localizedDescription)")
                 return
@@ -93,9 +93,11 @@ class UserDetailViewModel {
         })
     }
     func descargarImagen(successCallback: @escaping(() -> Void), errorCallback: @escaping(() -> Void)){
-        storage.child(self.user.foto!).getData(maxSize: 2 * 1024 * 1024) { data, error in
+        storage.child(self.user.correo!).getData(maxSize: 4 * 1024 * 1024) { data, error in
             if let error = error {
+                self.img = UIImage(systemName: "person.crop.circle")!
                 print("error: \(error.localizedDescription)")
+                errorCallback()
             } else {
                 let image = UIImage(data: data!)
                 if image != nil{
